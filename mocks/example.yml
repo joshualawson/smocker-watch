@@ -1,0 +1,15 @@
+# Service Example Mock
+- request:
+    method: GET
+    path:
+      matcher: ShouldMatch
+      value: /example/*
+  response:
+    status: 200
+    headers:
+      Content-Type: application/json
+    body: >
+      {
+        "example": true,
+        "test": "blah"
+      }
