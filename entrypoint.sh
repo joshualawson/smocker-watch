@@ -2,7 +2,7 @@
 
 runServer() {
   echo "starting smocker"
-  /opt/smocker &
+  (cd /opt && /opt/smocker &)
   printf "loading smocker mocks"
   wait 1
   counter=0
